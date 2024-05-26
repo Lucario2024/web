@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/formularioestilo.css">
+    <body bgcolor="orange"></body>
+    <title>formulario de registro</title>
+    <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ioRuaVe42R3kjgFnObS2Vl8qsiR2Xph8Ww&s" / height="100ss"></a></p>
+    
+    </div>
+</head>
+<body>
+    <section class="form-register">
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_mail" />
+              </li>
+              <li>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <fieldset>
+                <p> 
+                  <legend>¿te encanta los perros?<abbr title="Este campo es obligatorio" aria-label="required">*</abbr></legend>
+                </p>
+                <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Sí</label>
+                <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+              </fieldset>
+              <p>
+                <label for="n1">¿Qué edad tienes?</label>
+                <!-- El atributo pattern puede actuar como una alternativa para los navegadores que
+                     no implementan el tipo de entrada de número, pero admiten el atributo pattern.
+                     Ten en cuenta que los navegadores que admiten el atributo pattern lo harán
+                     fallar silenciosamente cuando se use con un campo numérico.
+                     Su uso aquí solo actúa como una alternativa -->
+                 <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                       pattern="\d+">
+              </p>
+              <p>
+                <label for="t1">¿Cuál es tu perro favorito?<abbr title="Este campo es obligatorio" aria-label="required">*</abbr></label>
+                <input type="text" id="t1" name="fruit" list="l1" required
+                       pattern="[egr]el golden Retriever|[ehs]el Husky siberiano|[etsc]el toy spaniel Continental|[ed]el dalmata|[ai]akita inu|[es]el Samoyedo ">
+                <datalist id="l1">
+                  <option>El Golden Retriever</option>
+                  <option>El Husky siberiano</option>
+                  <option>El Toy Spaniel Continental</option>
+                  <option>El dálmata</option>
+                  <option>Akita Inu</option>
+                  <option>El Samoyedo</option>
+                 </datalist>
+                </p>
+              <p>
+                <button>Enviar</button>
+              </p>
+            </form>
+            </body>
+</html>
