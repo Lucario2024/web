@@ -1,0 +1,368 @@
+body {
+	font-family: Verdana;
+	font-size: 12px;
+	color: #000000;
+	text-align: center;
+	margin: 0px;
+	padding:1px;
+	background-color: #00FF66;
+
+	
+}
+
+#contenedor {
+	width: 580px;
+	height: 700px;
+	border: 3px solid #006666;
+	text-align: center;
+	background: #66CC99;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+		
+}
+
+#encabezado {
+	text-align: center;
+	padding: 10px;
+	width: auto;
+	height: 80px;
+	border:10px solid #66CC99;
+	background-color: #006666;
+	background-image: url(fotos_principal/logo_dos.png);
+	background-repeat: no-repeat;
+	clear:both;
+	float: none;
+	margin-right: 10px;
+	margin-left: 30px;
+	font-size: x-large;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+/* --------- MENU PRINCIPAL ----------- */
+
+#menu {
+	position:relative;
+	float: left;
+	margin: 15px;
+	width: 130px;
+	height: auto;
+	background: #006666;
+	background-color: #66CC99;
+	
+}
+
+#menu ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+#menu li a {
+	display: block;
+	background-color: #FFFFFF;
+	color: #666633;
+	width: 130px;
+	text-decoration: none;
+	font-size: 10px;
+	line-height: 20px;
+	text-align: center;
+	border-right: 0px solid #000033;
+	font-weight: bold;
+}
+
+#menu li a:hover {
+
+	background-color:#66CC99;
+	color: #000066;
+}
+
+/* --------- CONTENIDO ----------- */
+#contenidopp {
+	position:relative;
+	float: left;
+	width: 580px;
+	height: 550px;
+	color: #FFFFCC;
+	background-color: #009999;
+}
+
+
+
+
+#contenido {
+	position:relative;
+	float: left;
+	width: 400px;
+	height: 400px;
+	color: #33FFCC ;
+	background-color:#009999;
+}
+
+#foto {
+	width:330px;
+	height: 500px;
+	float: left;
+	margin: 10px;
+}
+#fotopp {
+	width:100px;
+	height: 500px;
+	float: left;
+	margin: 1px;
+}
+
+
+
+/* --------- MENU PIE DE PAGINA ----------- */
+
+#menupie {
+    
+	margin: 50px auto;
+	border: 3px solid #666600;
+	width: 400px;
+	height: 50px;
+	background:#666600; 
+	text-align: center;
+}
+
+#menupie ul {
+
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	
+}
+
+#menupie li {
+    
+	text-align: center;
+	width: 300px;
+	height: 20px;
+	margin: 0px;
+	float: left;
+		
+}
+
+#menupie li a {
+	
+	display: block;
+	background-color: #FFFFFF;
+	color: #003399;
+	width: 195px;
+	padding: 0px;
+	text-decoration: none;
+	font-size: 10px;
+	line-height: 20px;
+	text-align: center;
+	border-right: 5px solid #003333;
+	font-weight: bold;
+}
+
+#menupie li a:hover {
+
+	background-color: #66FFCC;
+	color: #333366;
+}
+
+
+/*******CONTACTO*******/
+
+#contac {
+
+margin:auto;
+margin-top:30px;
+width:280px;
+height:245px;
+}
+
+#form-contacto_form {
+
+margin:0px;
+width:280px;
+height:245px;
+}
+
+#formula {
+
+float:left;
+clear:both;
+width:850px;
+height:235px;
+}
+
+#caja {
+
+float:left;
+display:inline;
+width:90px;
+line-height:21px;
+text-align:right;
+}
+
+#dato {
+
+line-height:121px;
+width:250px;
+clear:right; 
+text-align:left;
+float:left;
+
+}
+
+
+/*******PAGINAS*******/
+
+#historia{
+
+margin:5px;
+margin-bottom:30px;
+width:450px;
+height:300px;
+background-color:#66CC99;
+color: #FFFFCC;
+}
+
+#textohistoria{
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	width: 350px;
+	height: 500px;
+	background-color: #FFFFFF;
+	color: #000066;
+	position: relative;
+}
+
+#imagenhistoria {
+	width: 330px;
+	float: left;
+	margin: 8px;
+}
+
+/* --------- pp ----------- */
+
+#menupp {
+
+	float: left;
+	margin: 5px;
+	
+	height: 201px;
+	background: #000000;
+	
+}
+
+#menupp ul {
+
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	font-weight: bold;
+	
+}
+
+#menupp li {
+	
+	float: left;
+		
+}
+
+#menupp li a {
+
+	display: block;
+	background-color: #000000;
+	color: #666633;
+	width: 130px;
+	text-decoration: none;
+	font-size: 10px;
+	line-height: 20px;
+	text-align: center;
+	border-right: 0px solid #666633;
+	font-weight: bold;
+}
+
+#menupp li a:hover {
+
+	background-color:#000000;
+	color: #000000;
+}
+
+/* ---------scroll ----------- */
+
+ #capa2 {
+	
+	float:right;
+	background: #FF9933;
+	color: #000000;
+	width: 130px;
+	height: 200px;
+	border: 1px dotted #FF9933;
+	overflow: scroll; 
+}
+ /* ---------scroll2 ----------- */
+
+ #capa3 {
+	float:none;
+	color: #FFFFFF;
+	height: 700px;
+	border: 1px dotted #FF9933;
+	overflow: scroll;
+	background-color: #00FFCC;
+}
+ 
+html {
+	height: 100%;
+  }
+  
+  body {
+	height: 100%;
+	margin: 0;
+	background: #162944;
+  }
+  
+  .button_slide {
+	color: #FFF;
+	border: 2px solid rgb(216, 2, 134);
+	border-radius: 0px;
+	padding: 18px 36px;
+	display: inline-block;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 14px;
+	letter-spacing: 1px;
+	cursor: pointer;
+	box-shadow: inset 0 0 0 0 #D80286;
+	-webkit-transition: ease-out 0.4s;
+	-moz-transition: ease-out 0.4s;
+	transition: ease-out 0.4s;
+  }
+  
+  .slide_down:hover {
+	box-shadow: inset 0 100px 0 0 #D80286;
+  }
+  
+  .slide_right:hover {
+	box-shadow: inset 400px 0 0 0 #D80286;
+  }
+  
+  .slide_left:hover {
+	box-shadow: inset 0 0 0 50px #D80286;
+  }
+  
+  .slide_diagonal:hover {
+	box-shadow: inset 400px 50px 0 0 #D80286;
+  }
+  
+  #outer {
+	width: 364px;
+	margin: 50px auto 0 auto;
+	text-align: center;
+  }
