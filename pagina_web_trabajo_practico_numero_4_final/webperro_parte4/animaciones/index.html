@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juegos</title>
+    <link rel="stylesheet" href="animaciones.css">
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <center><center><h1><div class="button_slide slide_diagonal"><a href="../index.html">incio</a></h1></div></a><br> </div></a><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSc5ZxZ6dMozhReZwztnzzuC3eceo3JRBqBxQ&s" / height="100ss"></a> <div class="button_slide slide_diagonal"></p></center></center>
+        <body bgcolor="orange"></body>
+        <canvas id="canvas" width="300" height="300"></canvas>
+        <!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+      #train {
+        position: relative;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+ <center><img id="train" src="https://js.cx/clipart/train.gif"></center> 
+  
+  
+    <script>
+      train.onclick = function() {
+        let start = Date.now();
+  
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+  
+          train.style.left = timePassed / 5 + 'px';
+  
+          if (timePassed > 2000) clearInterval(timer);
+  
+        }, 20);
+      }
+    </script>
+  
+  
+  </body>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    progress {
+      width: 5%;
+    }
+  </style>
+  <script src="animate.js"></script>
+</head>
+
+<body>
+
+
+  <progress id="elem"></progress>
+
+  <script>
+    elem.onclick = function() {
+      animate({
+        duration: 1000,
+        timing: function(timeFraction) {
+          return timeFraction;
+        },
+        draw: function(progress) {
+          elem.style.width = progress * 100 + '%';
+        }
+      });
+    };
+  </script>
+</body>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.cx/libs/animate.js"></script>
+  </head>
+  
+  <body>
+  
+  
+    <div id="path">
+      <div id="brick"></div>
+    </div>
+  
+    <script>
+      function makeEaseOut(timing) {
+        return function(timeFraction) {
+          return 1 - timing(1 - timeFraction);
+        }
+      }
+  
+      function bounce(timeFraction) {
+        for (let a = 0, b = 1; 1; a += b, b /= 2) {
+          if (timeFraction >= (7 - 4 * a) / 11) {
+            return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+          }
+        }
+      }
+  
+      let bounceEaseOut = makeEaseOut(bounce);
+  
+      brick.onclick = function() {
+        animate({
+          duration: 3000,
+          timing: bounceEaseOut,
+          draw: function(progress) {
+            brick.style.left = progress * 500 + 'px';
+          }
+        });
+      };
+    </script>
+  </body>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.cx/libs/animate.js"></script>
+  </head>
+  
+  <body>
+  
+  
+   <center><textarea id="textExample" rows="5" cols="60">Tomó su espada vorpal en mano:
+    Hace mucho tiempo que el enemigo manxome buscaba—
+    Así descansó junto al árbol Tumtum,
+    Y se quedó un rato en el pensamiento.
+      </textarea></textarea></center> 
+  
+    <center><button onclick="animateText(textExample)">¡Ejecuta la escritura animada!</button></center>
+  
+    <script>
+      function animateText(textArea) {
+        let text = textArea.value;
+        let to = text.length,
+          from = 0;
+  
+        animate({
+          duration: 5000,
+          timing: bounce,
+          draw: function(progress) {
+            let result = (to - from) * progress + from;
+            textArea.value = text.slice(0, Math.ceil(result))
+          }
+        });
+      }
+  
+  
+      function bounce(timeFraction) {
+        for (let a = 0, b = 1; 1; a += b, b /= 2) {
+          if (timeFraction >= (7 - 4 * a) / 11) {
+            return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+          }
+        }
+      }
+    </script>
+    
+  </body>
+</html>
