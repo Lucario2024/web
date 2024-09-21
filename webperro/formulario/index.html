@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/formularioestilo.css">
+  
+
+    
+		  
+	<title>
+    inicio de sesion
+	</title>
+	
+
+    
+</head>
+<body>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+
+
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <driv class=" logo">
+                <img src="../fotos/zombis.jpg" / height="80ss">
+              </driv>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">home<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../Index.html">inicio</a></li>
+                    <li><a href="../alimentos/index.html">alimentos</a></li>
+                    <li><a href="../juguetes/index.html">juguetes</a></li>
+                    <li><a href="../medicacion/index.html">medicamentos</a></li>
+                    <li><a href="../contacto/index.html">contacto</a><li>
+                      <li><a href="../animaciones/index.html">juegos</a></li>
+                  </ul>
+                </li>
+               
+            </div>
+           
+          </div>
+        </nav>
+       <center>
+        <body>
+          <div class="login-container">
+            <form action="info.php" method="post">
+                <h2>incio</h2>
+                <div class="input-group">
+                    <label for="username">nombre</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">contraseña</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <li>
+                  <label for="msg">Mensaje</label>
+                  <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <fieldset>
+                  <p> 
+                    <legend>¿te encanta los perros?<abbr title="Este campo es obligatorio" aria-label="required"></abbr></legend>
+                  </p>
+                 <center><input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Sí</label></center> 
+                 <center><input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label></center> 
+                </fieldset>
+                <p>
+                  <label for="n1">¿Qué edad tienes?</label>
+                  <!-- El atributo pattern puede actuar como una alternativa para los navegadores que
+                       no implementan el tipo de entrada de número, pero admiten el atributo pattern.
+                       Ten en cuenta que los navegadores que admiten el atributo pattern lo harán
+                       fallar silenciosamente cuando se use con un campo numérico.
+                       Su uso aquí solo actúa como una alternativa -->
+                   <input type="number" min="12" max="120" step="1" id="n1" name="age"
+                         pattern="\d+">
+                </p>
+              </head> 
+              <button>Enviar</button> 
+        </div>
+                      <center><img src="https://gifdb.com/images/high/splatoon-backflip-victory-pose-8wvs8ifev4pktfg0.gif" / height="120ss"></center>
+                    </p>
+                  </form>
+                  </body>
+       </center>
+</body>
+</html>
