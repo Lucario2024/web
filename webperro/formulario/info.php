@@ -1,35 +1,29 @@
 <?php
-// Connect to the database
-$conn = new mysqli('localhost', 'root', '', 'webperros');
+$dbhost ="localhost";
+$dbuser ="root";
+$dbpass ="";
+$dbname ="test";
 
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+$conn =mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) ;
+if (!$conn)
+{
+    die("no hay conexion: ".mysqli_connect_error());
 }
 
-// Get the posted data
-$username = $_POST['username'];
-$password = $_POST['password'];
+$nombre = $_POST[""]
+$pass = $_POST[""]
 
-// Query the database
-$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-$result = $conn->query($sql);
+$query = mysqli_query($conn,"SELECT: FROM login WHERE usuario = " $nombre." and password = ".$pass. "")
+$nr = mysqli_num_rows (query);
 
-if ($result->num_rows > 0) {
-    echo "Login successful!";
-} else {
-    echo "Invalid username or password!";
+if ($nr == 1)
+
+{
+     //header(location:"inicio.html")
+     echo "bienvenido:" .$nombre
 }
-
-// Close the connection
-$conn->close();
-
-$para      = 'j.ruizmontenegro05@gmail.com';
-$titulo    = 'El título';
-$mensaje   = 'Hola';
-$cabeceras = 'From: j.ruizmontenegro05@gmail.com' . "\r\n" .
-    'Reply-To: j.ruizmontenegro05@gmail.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-mail($para, $titulo, $mensaje, $cabeceras);
+else if ($nr == 0)
+{
+    echo: "no ingreso, usuario no existe";
+}
 ?>
