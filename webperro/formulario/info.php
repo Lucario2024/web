@@ -1,29 +1,25 @@
 <?php
-$dbhost ="localhost";
-$dbuser ="root";
-$dbpass ="";
-$dbname ="test";
+// Connect to the database
+$conn = new mysqli('localhost', 'root', '', 'webperro');
 
-$conn =mysqli_connect($dbhost, $dbuser, $dbpass, $dbname) ;
-if (!$conn)
-{
-    die("no hay conexion: ".mysqli_connect_error());
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
-$nombre = $_POST[""]
-$pass = $_POST[""]
+// Get the posted data
+$username = $_POST['username'];
+$password = $_POST['password'];
 
-$query = mysqli_query($conn,"SELECT: FROM login WHERE usuario = " $nombre." and password = ".$pass. "")
-$nr = mysqli_num_rows (query);
+// Query the database
+$sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+$result = $conn->query($sql);
 
-if ($nr == 1)
-
-{
-     //header(location:"inicio.html")
-     echo "bienvenido:" .$nombre
+if ($result->num_rows > 0) {
+    echo "Login successful!";
+} else {
+    echo "Invalid username or password!";
 }
-else if ($nr == 0)
-{
-    echo: "no ingreso, usuario no existe";
-}
+
+// Close the connection
 ?>
