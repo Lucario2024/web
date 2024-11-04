@@ -1,6 +1,6 @@
 <?php
 // Connect to the database
-$conn = new mysqli('localhost', 'root', '', 'webperro');
+$conn = new mysqli('localhost:3306', 'root', '', 'webperro');
 
 // Check the connection
 if ($conn->connect_error) {
@@ -22,4 +22,5 @@ if ($result->num_rows > 0) {
 }
 
 // Close the connection
+$conn->close();
 ?>
